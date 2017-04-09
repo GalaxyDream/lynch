@@ -116,7 +116,7 @@ model.save_weights('new.h5')
 if __name__ == '__main__':
 	print('testing...'+'\n')
 	correct=0
-	num0=0      #the number of label 0 which is correctly identified
+	num0=0          #the number of label 0 which is correctly identified
 	num0total=0	#the total number of label 0
 	num1=0		#the number of label 1 which is correctly identified
 	num1total=0	#the total number of label 1
@@ -145,8 +145,8 @@ if __name__ == '__main__':
 			num1total+=1
 		else:
 			num2total+=1
-	print(float(num0)/float(num0total))
-	print(float(num1)/float(num1total))
-	print(float(num2)/float(num2total))
-	print(float(correct)/float(len(Y)))
+	print(float(num0)/float(num0total)) #the accuracy for label 0
+	print(float(num1)/float(num1total)) #the accuracy for label 1
+	print(float(num2)/float(num2total)) #the accuracy for label 2
+	print(float(correct)/float(len(Y))) #the accuracy for testset
 
